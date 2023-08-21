@@ -14,7 +14,7 @@ app.use(bodyparser.json());
 app.use(cookieparser());
 app.use(cors({
     methods: ["GET", "POST", "DELETE"],
-    origin: true,
+    origin: 'https://todohub.vercel.app',
     credentials: true,
 }));
 
