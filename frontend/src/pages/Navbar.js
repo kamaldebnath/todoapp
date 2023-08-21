@@ -7,7 +7,7 @@ const Navbar = () => {
     const [user, SetUser] = useState(false);
     const navigate=useNavigate();
     useEffect(() => {
-        axios.post("http://todoapp-r6wz.onrender.com/auth", {
+        axios.post("https://todoapp-r6wz.onrender.com/auth", {
             "token": localStorage.getItem("jwt")
         }).then((e) => {
             SetUser(e.data.auth);

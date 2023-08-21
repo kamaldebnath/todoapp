@@ -11,7 +11,7 @@ const Login = () => {
 
     function handleLogin(e) {
         e.preventDefault();
-        axios.post("http://todoapp-r6wz.onrender.com/login", {
+        axios.post("https://todoapp-r6wz.onrender.com/login", {
             "email": email,
             "password": password
         }).then((response) => {

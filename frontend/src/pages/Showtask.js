@@ -5,7 +5,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 function Showtask({id,taskname}) {
 
     function deleteTask(){
-        axios.delete(`http://todoapp-r6wz.onrender.com/removetask/${localStorage.getItem("jwt")}/${id}`);
+        axios.delete(`https://todoapp-r6wz.onrender.com/removetask/${localStorage.getItem("jwt")}/${id}`);
     }
 
     return (

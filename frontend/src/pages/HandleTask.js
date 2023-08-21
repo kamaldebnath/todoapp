@@ -9,7 +9,7 @@ function Addtask() {
 
     function SubmitTask(e) {
         e.preventDefault();
-        axios.post('http://todoapp-r6wz.onrender.com/addtask', {
+        axios.post('https://todoapp-r6wz.onrender.com/addtask', {
             "token": localStorage.getItem("jwt"),
             "task": taskname
         }).then((response) => { console.log(response) });

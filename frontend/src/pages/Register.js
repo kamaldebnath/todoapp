@@ -11,7 +11,7 @@ const Register = () => {
     const navigate=useNavigate();
     function handleSubmit(e) {
         e.preventDefault();
-        axios.post('http://todoapp-r6wz.onrender.com/register',{
+        axios.post('https://todoapp-r6wz.onrender.com/register',{
             "email":email,
             "username":username,
             "password":password
