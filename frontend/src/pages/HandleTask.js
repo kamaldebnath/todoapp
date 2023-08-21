@@ -17,7 +17,7 @@ function Addtask() {
     }
 
     async function getData() {
-        const res = await axios.post('http://todoapp-r6wz.onrender.com/gettask', { "email": localStorage.getItem("email") });
+        const res = await axios.post('https://todoapp-r6wz.onrender.com/gettask', { "email": localStorage.getItem("email") });
         SetAllData(res.data);
     }
 
