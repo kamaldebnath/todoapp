@@ -21,7 +21,7 @@ app.use(cors({
 
 //Data base
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://metacyst:SnWfstc6vXW25OER@cluster0.yka8yj6.mongodb.net/app')
+mongoose.connect('mongodb+srv://')
 
 //schema
 const UserSchema = mongoose.Schema({
